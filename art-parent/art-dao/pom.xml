@@ -5,5 +5,5 @@
     <artifactId>art-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>art-util</artifactId>
+  <artifactId>art-dao</artifactId>
 </project>

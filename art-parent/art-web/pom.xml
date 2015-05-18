@@ -5,5 +5,13 @@
     <artifactId>art-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>art-util</artifactId>
+  <artifactId>art-web</artifactId>
+  
+  <dependencies>
+  	<dependency>
+			<groupId>com.cr.art</groupId>
+			<artifactId>art-service</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+  </dependencies>
 </project>

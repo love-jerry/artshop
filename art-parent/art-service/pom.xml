@@ -5,5 +5,19 @@
     <artifactId>art-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>art-util</artifactId>
+  <artifactId>art-service</artifactId>
+  
+  <dependencies>
+  	<dependency>
+			<groupId>com.cr.art</groupId>
+			<artifactId>art-dao</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cr.art</groupId>
+			<artifactId>art-util</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+  	
+  </dependencies>
 </project>

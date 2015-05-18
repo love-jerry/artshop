@@ -13,7 +13,6 @@
 		<org.springframework-version>3.2.0.RELEASE</org.springframework-version>
 		<ch.qos.logback-version>1.0.9</ch.qos.logback-version>
 		<org.codehaus.jackson-version>1.9.11</org.codehaus.jackson-version>
-		<freemarker-version>2.3.19</freemarker-version>
 	</properties>
 
 	<dependencies>
@@ -91,13 +90,6 @@
 			<version>${ch.qos.logback-version}</version>
 		</dependency>
 
-		<!-- freemarker -->
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>${freemarker-version}</version>
-		</dependency>
-
 		<!-- mongodb -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
@@ -139,7 +131,7 @@
 
 
 	<build>
-		<finalName>cqeca</finalName>
+		<finalName>artshop</finalName>
 		<plugins>
 			<!-- <plugin>
 				<groupId>org.mortbay.jetty</groupId>
