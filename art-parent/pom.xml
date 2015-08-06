@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cr.art</groupId>
@@ -13,6 +14,10 @@
 		<org.springframework-version>3.2.0.RELEASE</org.springframework-version>
 		<ch.qos.logback-version>1.0.9</ch.qos.logback-version>
 		<org.codehaus.jackson-version>1.9.11</org.codehaus.jackson-version>
+		
+		<org.mybatis-spring-version>1.1.1</org.mybatis-spring-version>
+		<mysql-version>5.1.26</mysql-version>
+		
 	</properties>
 
 	<dependencies>
@@ -89,6 +94,19 @@
 			<artifactId>logback-access</artifactId>
 			<version>${ch.qos.logback-version}</version>
 		</dependency>
+		
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${org.mybatis-spring-version}</version>
+		</dependency>
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-version}</version>
+		</dependency>
 
 		<!-- mongodb -->
 		<dependency>
@@ -158,7 +176,7 @@
 		        <artifactId>maven-jetty-plugin</artifactId>
 		        <version>6.1.25</version>
 		        <configuration>
-		        <!-- 增加systemProperties属性 --> 
+		        <!-- 增加systemProperties属�? --> 
 			        <systemProperties> 
 			            <systemProperty> 
 			                <name>org.mortbay.jetty.Request.maxFormContentSize</name> 
@@ -175,13 +193,29 @@
 		</plugins>
 	</build>
   
-
-  
   <modules>
   	<module>art-service</module>
   	<module>art-dao</module>
   	<module>art-web</module>
   	<module>art-util</module>
   	<module>art-assemble</module>
+    <module>art-cache</module>
   </modules>
+  
+  
+  	<repositories>
+		<repository>
+			<id>jboss</id>
+			<name>JBoss Repository</name>
+			<url>http://repository.jboss.com/maven2/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<!-- 配置资源�?-->
+		<!-- <repository> <id>nexus</id> <name>nexus</name> <url>http://172.16.1.205:8081/nexus/content/groups/public/</url> 
+			</repository> -->
+	</repositories>
+  
+  
 </project>

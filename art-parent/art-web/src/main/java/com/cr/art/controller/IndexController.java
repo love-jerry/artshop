@@ -14,7 +14,7 @@ public class IndexController {
 	@ResponseBody
 	public Object test() {
 		Map<String,String> result = new HashMap<String,String>();
-		result.put("code", "ok");
+		result.put("yishi", "run");
 		return result;
 	}
 	

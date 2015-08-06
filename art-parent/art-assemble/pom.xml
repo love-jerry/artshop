@@ -11,6 +11,11 @@
   <dependencies>
 		<dependency>
 			<groupId>com.cr.art</groupId>
+			<artifactId>art-cache</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.cr.art</groupId>
 			<artifactId>art-service</artifactId>
 			<version>0.0.1</version>
 		</dependency>
