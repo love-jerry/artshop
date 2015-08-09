@@ -12,9 +12,12 @@ public class IndexController {
 
 	@RequestMapping(value="/index")
 	@ResponseBody
-	public Object test() {
+	public Object toIndex() {
 		Map<String,String> result = new HashMap<String,String>();
-		result.put("yishi", "run");
+		
+		//find art info by page
+		
+		
 		return result;
 	}
 	
