@@ -6,7 +6,13 @@ import java.util.Map;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
+/***
+ * *
+* @ClassName: IndexController
+* @Description: 
+* @author chenrui
+* @date  2015年9月7日 下午2:50:16
+ */
 @Controller
 public class IndexController {
 

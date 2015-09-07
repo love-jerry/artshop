@@ -45,6 +45,7 @@
 		<table tableName="art_user_focus_author" domainObjectName="ArtFocusAutherM"></table>
 		<table tableName="art_user_praise_art" domainObjectName="ArtPraiseArtM"></table>
 		<table tableName="user_focus_art" domainObjectName="ArtFocusArt"></table>
+		<table tableName="art_category" domainObjectName="ArtCategory"></table>
 	
 	</context>
 

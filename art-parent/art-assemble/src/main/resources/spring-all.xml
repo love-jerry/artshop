@@ -7,6 +7,18 @@
 						http://www.springframework.org/schema/context 
 						http://www.springframework.org/schema/context/spring-context.xsd">
 						
-	<import resource="classpath*:/art-web.xml"/>
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:/config.properties</value>
+			</list>
+		</property>
+	</bean>					
+						
+	<import resource="classpath*:/art-ds.xml"/>
+	<import resource="classpath*:/art-mybatis.xml"/>
+	<import resource="classpath*:/art-servcie.xml"/>
+	<import resource="classpath*:/art-cache.xml"/>
 
 </beans>
